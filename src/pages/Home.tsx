@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform, useInView, useMotionValue, animate } from "framer-motion";
 import Button from "@/components/Button";
 
@@ -377,25 +378,28 @@ export default function Home() {
           </motion.div>
           <div className="grid grid-cols-1 gap-7 md:grid-cols-3">
             {essentials.map((item, index) => (
-              <motion.a
-                href={item.to}
+              <motion.div
                 key={item.title}
                 initial={{ opacity: 0, y: 34 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.65, delay: index * 0.08 }}
-                className="group block overflow-hidden rounded-[3rem] bg-ivory shadow-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-navy/8"
               >
-                <div className="aspect-[4/5] overflow-hidden">
-                  <img src={item.image} alt={item.title} className="h-full w-full object-cover img-editorial" />
-                </div>
-                <div className="p-7">
-                  <p className="text-caption text-sage mb-3">{item.note}</p>
-                  <h3 className="text-navy text-3xl mb-4">{item.title}</h3>
-                  <p className="text-sm font-medium leading-relaxed text-stone mb-6">{item.copy}</p>
-                  <span className="text-xs font-bold uppercase tracking-[0.18em] text-navy group-hover:text-sage">View details</span>
-                </div>
-              </motion.a>
+                <Link
+                  to={item.to}
+                  className="group block h-full overflow-hidden rounded-[3rem] bg-ivory shadow-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-navy/8"
+                >
+                  <div className="aspect-[4/5] overflow-hidden">
+                    <img src={item.image} alt={item.title} className="h-full w-full object-cover img-editorial" />
+                  </div>
+                  <div className="p-7">
+                    <p className="text-caption text-sage mb-3">{item.note}</p>
+                    <h3 className="text-navy text-3xl mb-4">{item.title}</h3>
+                    <p className="text-sm font-medium leading-relaxed text-stone mb-6">{item.copy}</p>
+                    <span className="text-xs font-bold uppercase tracking-[0.18em] text-navy group-hover:text-sage">View details</span>
+                  </div>
+                </Link>
+              </motion.div>
             ))}
           </div>
         </div>
