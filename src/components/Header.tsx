@@ -27,22 +27,26 @@ export default function Header() {
   }, [location]);
 
   return (
-    <header
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-700",
-        scrolled
-          ? "bg-cream/95 backdrop-blur-md py-4 shadow-sm shadow-navy/5"
-          : "bg-cream/70 backdrop-blur-sm py-6"
-      )}
-    >
-      <nav className="container-full">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
+    <>
+      <header
+        className={cn(
+          "fixed top-4 md:top-6 left-0 right-0 mx-auto z-50 transition-all duration-700 w-[95%] max-w-6xl rounded-[2.5rem] border",
+          scrolled
+            ? "bg-cream/70 backdrop-blur-xl py-2 md:py-3 shadow-lg shadow-navy/5 border-taupe/20"
+            : "bg-cream/40 backdrop-blur-md py-3 md:py-4 border-taupe/10"
+        )}
+      >
+        <nav className="px-5 md:px-8 w-full">
+          <div className="flex items-center justify-between">
+            {/* Logo */}
           <Link to="/" className="flex items-center group">
             <img
               src="/images/logo.png"
               alt="Econest Living"
-              className="h-16 md:h-20 w-auto transition-all duration-500"
+              className={cn(
+                "w-auto transition-all duration-700",
+                scrolled ? "h-10 md:h-12" : "h-12 md:h-14"
+              )}
             />
           </Link>
 
@@ -96,15 +100,16 @@ export default function Header() {
           </button>
         </div>
       </nav>
+    </header>
 
       {/* Mobile Menu */}
       <div
         className={cn(
-          "lg:hidden fixed inset-0 top-[72px] bg-cream transition-all duration-500",
+          "lg:hidden fixed inset-0 z-40 bg-cream transition-all duration-500",
           mobileOpen ? "opacity-100 visible" : "opacity-0 invisible"
         )}
       >
-        <div className="container-full pt-16 pb-8">
+        <div className="container-full pt-32 pb-8">
           <div className="space-y-8">
             {navLinks.map((link, index) => (
               <Link
@@ -127,6 +132,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 }
