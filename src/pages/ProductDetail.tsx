@@ -94,7 +94,7 @@ export default function ProductDetail() {
               transition={{ duration: 0.9, delay: 0.15, ease: "easeOut" }}
               className="lg:col-span-7 editorial-shape shadow-xl"
             >
-              <div className="aspect-[5/4] max-h-[64vh]">
+              <div className="aspect-[5/4] max-h-[45vh] md:max-h-[64vh]">
                 <img
                   src={product.image}
                   alt={product.name}

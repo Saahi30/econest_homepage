@@ -102,6 +102,7 @@ export default function Craftsmanship() {
                         src={step.image}
                         alt={step.title}
                         className="w-full h-full object-cover img-editorial"
+                        loading={index === 0 ? "eager" : "lazy"}
                       />
                     </div>
                   ) : (
@@ -152,6 +153,7 @@ export default function Craftsmanship() {
                         src={step.image}
                         alt={step.title}
                         className="w-full h-full object-cover img-editorial"
+                        loading={index === 0 ? "eager" : "lazy"}
                       />
                     </div>
                   )}

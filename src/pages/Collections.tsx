@@ -94,6 +94,7 @@ export default function Collections() {
                       src={product.image}
                       alt={product.name}
                       className="w-full h-full object-cover img-editorial hover:scale-105 transition-transform duration-1000"
+                      loading={index === 0 ? "eager" : "lazy"}
                     />
                   </div>
                 </motion.div>
@@ -192,6 +193,7 @@ export default function Collections() {
                     src={activePalette.image}
                     alt={`${activePalette.name} bedding lifestyle mood`}
                     className="w-full h-full object-cover img-editorial"
+                    loading="lazy"
                   />
                 </div>
                 <div className="p-2 md:p-4">
@@ -224,11 +226,12 @@ export default function Collections() {
               </p>
             </motion.div>
             <motion.div {...imageReveal} className="lg:col-span-7 editorial-shape">
-              <div className="aspect-[5/4] max-h-[60vh]">
+              <div className="aspect-[5/4] max-h-[45vh] md:max-h-[60vh]">
                 <img
-                  src={images.hotelBed}
-                  alt="Luxury hotel"
+                  src={images.towels}
+                  alt="Econest Towels"
                   className="w-full h-full object-cover img-editorial"
+                  loading="lazy"
                 />
               </div>
             </motion.div>

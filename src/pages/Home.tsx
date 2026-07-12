@@ -141,7 +141,7 @@ function HeroVisual() {
   const ySecondary = useTransform(scrollYProgress, [0, 0.35], [0, 34]);
 
   return (
-    <div className="relative min-h-[580px] lg:min-h-[680px]">
+    <div className="relative min-h-[480px] md:min-h-[580px] lg:min-h-[680px]">
       <motion.div
         style={{ y: yPrimary }}
         initial={{ opacity: 0, clipPath: "inset(18% 18% 18% 18% round 64px)" }}
@@ -255,6 +255,7 @@ export default function Home() {
                     src={whyEconest[activeWhy].image}
                     alt={whyEconest[activeWhy].title}
                     className="h-full w-full object-cover img-editorial"
+                    loading="lazy"
                   />
                 </motion.div>
                 <motion.div
@@ -321,7 +322,7 @@ export default function Home() {
           <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-16">
             <motion.div {...imageReveal} className="lg:col-span-7">
               <div className="relative overflow-hidden rounded-[4rem] shadow-2xl shadow-navy/10">
-                <img src={brandImages[4]} alt="Macro weave of 1000 Thread Count Egyptian cotton sateen" className="h-full max-h-[660px] w-full object-cover img-editorial" />
+                <img src={brandImages[4]} alt="Macro weave of 1000 Thread Count Egyptian cotton sateen" className="h-full max-h-[400px] md:max-h-[500px] lg:max-h-[660px] w-full object-cover img-editorial" loading="lazy" />
                 <motion.div
                   initial={{ opacity: 0, y: 24 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -390,7 +391,7 @@ export default function Home() {
                   className="group block h-full overflow-hidden rounded-[3rem] bg-ivory shadow-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-navy/8"
                 >
                   <div className="aspect-[4/5] overflow-hidden">
-                    <img src={item.image} alt={item.title} className="h-full w-full object-cover img-editorial" />
+                    <img src={item.image} alt={item.title} className="h-full w-full object-cover img-editorial" loading="lazy" />
                   </div>
                   <div className="p-7">
                     <p className="text-caption text-sage mb-3">{item.note}</p>
@@ -419,7 +420,7 @@ export default function Home() {
             </motion.div>
             <motion.div {...imageReveal} className="lg:col-span-7 lg:col-start-6">
               <div className="overflow-hidden rounded-[4rem] shadow-xl shadow-navy/10">
-                <img src={cottonFieldImage} alt="Egyptian cotton plants at golden hour" className="h-full max-h-[600px] w-full object-cover img-editorial" />
+                <img src={cottonFieldImage} alt="Egyptian cotton plants at golden hour" className="h-full max-h-[400px] md:max-h-[600px] w-full object-cover img-editorial" loading="lazy" />
               </div>
             </motion.div>
           </div>
@@ -458,7 +459,7 @@ export default function Home() {
             >
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:items-center">
                 <div className="aspect-[4/3] overflow-hidden rounded-[2.75rem]">
-                  <img src={activePalette.image} alt={`${activePalette.name} bedding mood`} className="h-full w-full object-cover img-editorial" />
+                  <img src={activePalette.image} alt={`${activePalette.name} bedding mood`} className="h-full w-full object-cover img-editorial" loading="lazy" />
                 </div>
                 <div className="p-3 md:p-6">
                   <p className="text-caption text-sage mb-4">Selected Shade</p>
@@ -483,7 +484,7 @@ export default function Home() {
             </motion.div>
             <motion.div {...imageReveal} className="lg:col-span-7">
               <div className="overflow-hidden rounded-[4rem]">
-                <img src={brandImages[5]} alt="Ivory Econest Living bedding in a composed bedroom" className="h-full max-h-[620px] w-full object-cover img-editorial" />
+                <img src={brandImages[5]} alt="Ivory Econest Living bedding in a composed bedroom" className="h-full max-h-[400px] md:max-h-[620px] w-full object-cover img-editorial" loading="lazy" />
               </div>
             </motion.div>
           </div>

@@ -54,6 +54,7 @@ export default function About() {
                 src={images.towels}
                 alt="Premium cotton textiles"
                 className="w-full h-full object-cover img-editorial"
+                loading="lazy"
               />
             </motion.div>
             <motion.div 
@@ -146,6 +147,7 @@ export default function About() {
                   src={images.bedroomLuxury}
                   alt="Elegant bedroom interior"
                   className="w-full h-full object-cover img-editorial"
+                  loading="lazy"
                 />
               </div>
             </motion.div>
