@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
 import { products, images } from "@/data";
+import SEO from "@/components/SEO";
 
 const collectionPaletteStories = [
   {
@@ -26,13 +27,13 @@ const collectionPaletteStories = [
     name: "Light Gray",
     hex: "#C7CBD1",
     image: "/images/econest-bedding-light-gray.jpg",
-    definition: "Balanced and contemporary. Light Gray suits navy accents, stone surfaces, and bedrooms that need refined structure.",
+    definition: "Composed and contemporary. Light Gray suits navy accents, stone surfaces, and refined rooms that need quiet structure.",
   },
   {
     name: "Light Blue",
     hex: "#B7CCDA",
     image: "/images/econest-bedding-light-blue.jpg",
-    definition: "Fresh and resort-like. Light Blue reflects quiet mornings, soft air, and a serene hospitality mood.",
+    definition: "Fresh and resort-like. Light Blue reflects quiet mornings, coastal calm, and a softer take on luxury hotel bedding.",
   },
 ];
 
@@ -55,6 +56,10 @@ export default function Collections() {
 
   return (
     <div className="overflow-hidden pt-24">
+      <SEO 
+        title="Our Collections | Econest Living" 
+        description="Explore our collection of 100% Egyptian cotton sheet sets, fitted sheets, and pillowcases in a variety of elegant colors." 
+      />
       {/* Hero */}
       <section className="py-16 md:py-32 bg-cream">
         <div className="container-full">

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
 import { images } from "@/data";
+import SEO from "@/components/SEO";
 
 const fadeUp = {
   initial: { opacity: 0, y: 60 },
@@ -19,6 +20,10 @@ const imageReveal = {
 export default function About() {
   return (
     <div className="overflow-hidden pt-24">
+      <SEO 
+        title="About Us | Econest Living" 
+        description="Learn about Econest Living's dedication to providing five-star hospitality quality Egyptian cotton bedding for your home." 
+      />
       {/* Hero with editorial shape */}
       <section className="py-16 md:py-32 bg-cream relative">
         <div className="absolute inset-0 bg-editorial" />

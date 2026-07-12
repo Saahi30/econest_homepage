@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
+import SEO from "@/components/SEO";
 
 const fadeUp = {
   initial: { opacity: 0, y: 60 },
@@ -11,6 +12,10 @@ const fadeUp = {
 export default function Contact() {
   return (
     <div className="overflow-hidden pt-24">
+      <SEO 
+        title="Contact Us | Econest Living" 
+        description="Get in touch with the Econest Living team for inquiries, support, and more." 
+      />
       {/* Hero */}
       <section className="py-16 md:py-32 bg-cream">
         <div className="container-full">

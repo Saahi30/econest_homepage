@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
 import { products, colorWays } from "@/data";
+import SEO from "@/components/SEO";
 
 const AMAZON_STORE_URL =
   "https://www.amazon.com/stores/ECONESTLIVING/page/EC573A51-FF95-41D1-AA80-7BFC20F7F6B4";
@@ -41,6 +42,7 @@ export default function ProductDetail() {
   if (!product) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-cream pt-24">
+        <SEO title="Product Not Found | Econest Living" description="The requested product could not be found." />
         <div className="text-center">
           <h1 className="text-2xl font-display text-navy mb-4">Product Not Found</h1>
           <p className="text-stone text-sm mb-6">The product you're looking for doesn't exist.</p>
@@ -61,6 +63,11 @@ export default function ProductDetail() {
 
   return (
     <div className="overflow-hidden pt-24">
+      <SEO 
+        title={`${product.name} | Econest Living`} 
+        description={product.tagline || `Shop the ${product.name} from Econest Living's 1000 thread count Egyptian cotton bedding collection.`} 
+        image={product.image}
+      />
       {/* Hero */}
       <section className="relative bg-cream py-20 md:py-28">
         <div className="absolute inset-0 bg-editorial" />

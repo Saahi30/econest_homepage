@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform, useInView, useMotionValue, animate } from "framer-motion";
 import Button from "@/components/Button";
+import SEO from "@/components/SEO";
 
 const brandImages = [
   "/images/econest-hero-ivory-bed.jpg",
@@ -181,6 +182,10 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden bg-cream">
+      <SEO 
+        title="Econest Living | Premium 1000 Thread Count Egyptian Cotton Bedding" 
+        description="Experience the five-star hospitality feeling at home. 100% Egyptian cotton bedding featuring a cooling sateen weave and tailored fit." 
+      />
       <section className="relative min-h-screen overflow-hidden bg-[linear-gradient(135deg,#fffdf8_0%,#f4ecdf_54%,#dfeaf0_100%)] pt-28 md:pt-36">
         <div className="absolute -right-28 top-0 h-80 w-80 rounded-full bg-powder/30 blur-3xl" />
         <div className="absolute -left-32 bottom-0 h-96 w-96 rounded-full bg-sage/15 blur-3xl" />

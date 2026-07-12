@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
 import { images } from "@/data";
+import SEO from "@/components/SEO";
 
 const fadeUp = {
   initial: { opacity: 0, y: 60 },
@@ -19,6 +20,10 @@ const imageReveal = {
 export default function Craftsmanship() {
   return (
     <div className="overflow-hidden pt-24">
+      <SEO 
+        title="Our Craftsmanship | Econest Living" 
+        description="Discover the meticulous process behind our 1000 thread count Egyptian cotton bedding, from fertile soils of the Nile Delta to state-of-the-art weaving." 
+      />
       {/* Hero */}
       <section className="py-16 md:py-32 bg-cream">
         <div className="container-full">
