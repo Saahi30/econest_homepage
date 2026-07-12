@@ -184,7 +184,7 @@ export default function Home() {
         <div className="absolute -right-28 top-0 h-80 w-80 rounded-full bg-powder/30 blur-3xl" />
         <div className="absolute -left-32 bottom-0 h-96 w-96 rounded-full bg-sage/15 blur-3xl" />
         <div className="container-full relative z-10 pb-16 md:pb-24">
-          <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-16">
             <motion.div
               initial={{ opacity: 0, y: 54 }}
               animate={{ opacity: 1, y: 0 }}
@@ -216,7 +216,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-cream rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 pt-32 pb-24 md:pt-44 md:pb-36 z-20 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
+      <section className="relative overflow-hidden bg-cream rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 pt-20 pb-16 md:pt-44 md:pb-36 z-20 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,rgba(175,197,212,0.2),transparent_30%),radial-gradient(circle_at_86%_80%,rgba(111,134,110,0.16),transparent_32%)]" />
         <motion.div
           aria-hidden="true"
@@ -231,7 +231,7 @@ export default function Home() {
           className="absolute left-8 top-1/3 h-3 w-3 rounded-full bg-sage"
         />
         <div className="container-full relative z-10">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 lg:items-center">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-16 lg:items-center">
             <motion.div {...fadeUp} className="lg:col-span-4">
               <p className="text-caption text-sage mb-5">Why Econest</p>
               <h2 className="text-navy mb-7">A calmer standard of bedding.</h2>
@@ -314,10 +314,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative bg-ivory rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 pt-32 pb-24 md:pt-40 md:pb-32 z-30 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
+      <section className="relative bg-ivory rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 pt-20 pb-16 md:pt-40 md:pb-32 z-30 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
         <div className="absolute inset-0 bg-editorial" />
         <div className="container-full relative z-10">
-          <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-16">
             <motion.div {...imageReveal} className="lg:col-span-7">
               <div className="relative overflow-hidden rounded-[4rem] shadow-2xl shadow-navy/10">
                 <img src={brandImages[4]} alt="Macro weave of 1000 Thread Count Egyptian cotton sateen" className="h-full max-h-[660px] w-full object-cover img-editorial" />
@@ -368,7 +368,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative bg-cream rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 pt-32 pb-24 md:pt-40 md:pb-32 z-40 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
+      <section className="relative bg-cream rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 pt-20 pb-16 md:pt-40 md:pb-32 z-40 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
         <div className="container-full">
           <motion.div {...fadeUp} className="mb-14 max-w-3xl">
             <p className="text-caption text-sage mb-5">The Essentials</p>
@@ -401,10 +401,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative bg-warm rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 pt-32 pb-24 md:pt-40 md:pb-32 z-50 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
+      <section className="relative bg-warm rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 pt-20 pb-16 md:pt-40 md:pb-32 z-50 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
         <div className="absolute inset-0 bg-editorial" />
         <div className="container-full relative z-10">
-          <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-16">
             <motion.div {...fadeUp} className="lg:col-span-4">
               <p className="text-caption text-sage mb-6">Craftsmanship</p>
               <h2 className="text-navy mb-7">From the Nile Delta.</h2>
@@ -422,7 +422,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative bg-cream rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 pt-32 pb-24 md:pt-40 md:pb-32 z-[60] shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
+      <section className="relative bg-cream rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 pt-20 pb-16 md:pt-40 md:pb-32 z-[60] shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
         <div className="container-full">
           <motion.div {...fadeUp} className="mb-14 max-w-3xl">
             <p className="text-caption text-sage mb-5">Color Collection</p>
@@ -467,10 +467,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-navy rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 pt-32 pb-24 md:pt-40 md:pb-32 z-[70] shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.2)]">
+      <section className="relative overflow-hidden bg-navy rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 pt-20 pb-16 md:pt-40 md:pb-32 z-[70] shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.2)]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(175,197,212,0.16),transparent_34%),radial-gradient(circle_at_90%_80%,rgba(111,134,110,0.15),transparent_34%)]" />
         <div className="container-full relative z-10">
-          <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-16">
             <motion.div {...fadeUp} className="lg:col-span-5">
               <p className="text-caption text-sage mb-6">Hospitality Quality</p>
               <h2 className="text-cream mb-7">The five-star experience, reimagined for home.</h2>

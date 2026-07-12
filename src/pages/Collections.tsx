@@ -56,7 +56,7 @@ export default function Collections() {
   return (
     <div className="overflow-hidden pt-24">
       {/* Hero */}
-      <section className="py-24 md:py-32 bg-cream">
+      <section className="py-16 md:py-32 bg-cream">
         <div className="container-full">
           <motion.div 
             initial={{ opacity: 0, y: 40 }}
@@ -77,14 +77,14 @@ export default function Collections() {
       </section>
 
       {/* Products - Editorial layout */}
-      <section className="relative bg-ivory rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 pt-24 md:pt-32 z-20 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
+      <section className="relative bg-ivory rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 pt-16 md:pt-32 z-20 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
         <div className="container-full">
           {products.map((product, index) => (
             <div 
               key={product.id}
-              className="py-24 md:py-32 border-t border-taupe/30 first:border-t-0"
+              className="py-16 md:py-32 border-t border-taupe/30 first:border-t-0"
             >
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-16 items-center">
                 <motion.div 
                   {...imageReveal}
                   className={`order-1 lg:order-none lg:row-start-1 ${index % 2 === 0 ? "lg:col-span-6 lg:col-start-1" : "lg:col-span-6 lg:col-start-7"}`}
@@ -130,7 +130,7 @@ export default function Collections() {
       </section>
 
       {/* Colors */}
-      <section className="relative py-32 md:py-48 bg-cream rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-30 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
+      <section className="relative py-20 md:py-48 bg-cream rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-30 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
         <div className="absolute inset-0 bg-editorial" />
         <div className="container-full relative z-10">
           <motion.div 
@@ -144,7 +144,7 @@ export default function Collections() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-16 items-start">
             <div className="lg:col-span-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-5">
               {collectionPaletteStories.map((color, index) => (
                 <motion.button
@@ -206,10 +206,10 @@ export default function Collections() {
       </section>
 
       {/* Coming Soon */}
-      <section className="relative py-32 bg-navy overflow-hidden rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-40 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.2)]">
+      <section className="relative py-20 md:py-32 bg-navy overflow-hidden rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-40 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.2)]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_20%,rgba(175,197,212,0.13),transparent_32%),radial-gradient(circle_at_15%_80%,rgba(111,134,110,0.18),transparent_30%)]" />
         <div className="relative z-10 container-full">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-16 items-center">
             <motion.div 
               {...fadeUp}
               className="lg:col-span-5"
@@ -237,7 +237,7 @@ export default function Collections() {
       </section>
 
       {/* CTA */}
-      <section className="relative overflow-hidden py-32 md:py-48 bg-warm rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-50 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
+      <section className="relative overflow-hidden py-20 md:py-48 bg-warm rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-50 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
         <motion.div
           aria-hidden="true"
           animate={{ rotate: 360 }}
@@ -270,3 +270,4 @@ export default function Collections() {
     </div>
   );
 }
+

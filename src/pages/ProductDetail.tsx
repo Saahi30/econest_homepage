@@ -65,7 +65,7 @@ export default function ProductDetail() {
       <section className="relative bg-cream py-20 md:py-28">
         <div className="absolute inset-0 bg-editorial" />
         <div className="container-full relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
@@ -107,9 +107,9 @@ export default function ProductDetail() {
       </section>
 
       {/* Details */}
-      <section className="relative py-24 md:py-32 bg-cream rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-20 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
+      <section className="relative py-16 md:py-32 bg-cream rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-20 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
         <div className="container-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24">
             <motion.div {...fadeUp}>
               <p className="text-caption text-sage mb-6">Details</p>
               <h3 className="text-navy mb-8">Crafted for comfort</h3>
@@ -235,7 +235,7 @@ export default function ProductDetail() {
       </section>
 
       {/* Craftsmanship Note */}
-      <section className="relative py-24 md:py-32 bg-ivory rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-30 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
+      <section className="relative py-16 md:py-32 bg-ivory rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-30 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
         <div className="container-full">
           <motion.div 
             {...fadeUp}
@@ -258,7 +258,7 @@ export default function ProductDetail() {
       </section>
 
       {/* CTA */}
-      <section className="relative py-24 md:py-32 bg-navy rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-40 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.2)]">
+      <section className="relative py-16 md:py-20 md:py-32 bg-navy rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-40 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.2)]">
         <div className="container-full">
           <motion.div 
             {...fadeUp}
@@ -284,3 +284,4 @@ export default function ProductDetail() {
     </div>
   );
 }
+

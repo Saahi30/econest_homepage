@@ -20,7 +20,7 @@ export default function About() {
   return (
     <div className="overflow-hidden pt-24">
       {/* Hero with editorial shape */}
-      <section className="py-24 md:py-32 bg-cream relative">
+      <section className="py-16 md:py-32 bg-cream relative">
         <div className="absolute inset-0 bg-editorial" />
         <div className="container-full relative z-10">
           <motion.div 
@@ -42,10 +42,10 @@ export default function About() {
       </section>
 
       {/* Story Section - Asymmetrical with luxury shapes */}
-      <section className="relative bg-ivory rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 pt-24 md:pt-32 z-20 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
+      <section className="relative bg-ivory rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 pt-16 md:pt-32 z-20 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
         <div className="absolute inset-0 bg-editorial" />
-        <div className="container-full py-24 md:py-32 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+        <div className="container-full py-16 md:py-32 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-16 items-center">
             <motion.div 
               {...imageReveal}
               className="lg:col-span-6 lg:col-start-1 editorial-shape"
@@ -85,7 +85,7 @@ export default function About() {
       </section>
 
       {/* Values - Editorial cards with luxury shapes */}
-      <section className="relative py-32 md:py-48 bg-cream rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-30 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
+      <section className="relative py-20 md:py-48 bg-cream rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-30 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
         <div className="absolute inset-0 bg-editorial" />
         <div className="container-full relative z-10">
           <motion.div 
@@ -129,10 +129,10 @@ export default function About() {
       </section>
 
       {/* Visual pause, framed with copy so the image does not dominate the full screen */}
-      <section className="relative py-24 md:py-32 bg-warm rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-40 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
+      <section className="relative py-16 md:py-32 bg-warm rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-40 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
         <div className="absolute inset-0 bg-editorial" />
         <div className="container-full relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-16 items-center">
             <motion.div {...fadeUp} className="lg:col-span-5 lg:col-start-1">
               <p className="text-caption text-sage mb-6">A Calmer Standard</p>
               <h3 className="text-navy mb-6">Luxury should feel quiet, not loud.</h3>
@@ -154,7 +154,7 @@ export default function About() {
       </section>
 
       {/* CTA with luxury background */}
-      <section className="relative py-32 md:py-48 bg-navy rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-50 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.2)]">
+      <section className="relative py-20 md:py-48 bg-navy rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-50 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.2)]">
         <div className="container-full">
           <motion.div 
             {...fadeUp}
@@ -187,3 +187,4 @@ export default function About() {
     </div>
   );
 }
+

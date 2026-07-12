@@ -12,7 +12,7 @@ export default function Contact() {
   return (
     <div className="overflow-hidden pt-24">
       {/* Hero */}
-      <section className="py-24 md:py-32 bg-cream">
+      <section className="py-16 md:py-32 bg-cream">
         <div className="container-full">
           <motion.div 
             initial={{ opacity: 0, y: 40 }}
@@ -33,9 +33,9 @@ export default function Contact() {
       </section>
 
       {/* Contact Info & Form */}
-      <section className="relative py-24 md:py-32 bg-ivory rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-20 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
+      <section className="relative py-16 md:py-32 bg-ivory rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-20 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
         <div className="container-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24">
             <motion.div {...fadeUp}>
               <p className="text-caption text-sage mb-6">Get in Touch</p>
               <h3 className="text-navy mb-10">Start a conversation</h3>
@@ -137,7 +137,7 @@ export default function Contact() {
       </section>
 
       {/* FAQ */}
-      <section className="relative py-24 md:py-32 bg-cream rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-30 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
+      <section className="relative py-16 md:py-32 bg-cream rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-30 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
         <div className="container-full">
           <motion.div 
             {...fadeUp}
@@ -195,3 +195,4 @@ export default function Contact() {
     </div>
   );
 }
+

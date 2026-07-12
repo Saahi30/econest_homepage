@@ -20,7 +20,7 @@ export default function Craftsmanship() {
   return (
     <div className="overflow-hidden pt-24">
       {/* Hero */}
-      <section className="py-24 md:py-32 bg-cream">
+      <section className="py-16 md:py-32 bg-cream">
         <div className="container-full">
           <motion.div 
             initial={{ opacity: 0, y: 40 }}
@@ -41,7 +41,7 @@ export default function Craftsmanship() {
       </section>
 
       {/* Process Steps */}
-      <section className="relative bg-ivory rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 pt-24 md:pt-32 z-20 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
+      <section className="relative bg-ivory rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 pt-16 md:pt-32 z-20 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.03)]">
         <div className="container-full">
           {[
             {
@@ -87,9 +87,9 @@ export default function Craftsmanship() {
           ].map((step, index) => (
             <div 
               key={step.number}
-              className="py-24 md:py-32 border-t border-taupe/30 first:border-t-0"
+              className="py-16 md:py-32 border-t border-taupe/30 first:border-t-0"
             >
-              <div className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center ${
+              <div className={`grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-16 items-center ${
                 index % 2 === 1 ? "" : ""
               }`}>
                 <motion.div 
@@ -163,7 +163,7 @@ export default function Craftsmanship() {
       </section>
 
       {/* Promise */}
-      <section className="relative py-32 md:py-48 bg-navy rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-30 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.2)]">
+      <section className="relative py-20 md:py-48 bg-navy rounded-t-[3rem] md:rounded-t-[4rem] -mt-12 z-30 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.2)]">
         <div className="container-full">
           <motion.div 
             {...fadeUp}
@@ -187,3 +187,4 @@ export default function Craftsmanship() {
     </div>
   );
 }
+
